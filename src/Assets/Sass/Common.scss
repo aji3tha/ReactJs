@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+@import "./variable","./mixins","./extend";
+body{
+    font-family: $font-family;
+    background-color: black;
+    color:white;
+    margin:0px;
+    Header{
+        background:$blue-gradient;
+        padding:30px;
+        box-shadow: $shadow;
+        position:fixed;
+        width:100%;
+        top:0;
+        a{
+            color:white;
+            padding:10px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    }
+    .common-style{
+        padding:0px 30px;
+        h3{
+            @include title;
+            @extend %btn;
+        }
+        h4{
+            @include sub-title;
+        }
+       ul{
+        color:$primary-color;
+       }
+       .inline-style{
+        @extend %btn;
+        background: $blue-gradient;
+       }
+       button{
+        @extend %btn;
+        background: $blue-gradient;
+        margin-right:20px !important;
+        margin-left:10px !important;
+        font-size: 20px;
+       }
+       input{
+        @extend %input;
+       }
+       table{
+        // border:3px dotted $white;
+        // width:90%;
+        tr{
+            width:90%;
+            box-shadow: $shadow;
+            th{
+                width:300px;
+                border:2px solid $primary-color;
+                padding:8px;
+                background: $violet-gradient;
+                &:last-child{
+                    width:auto; 
+                }
+            }
+            td{
+                width:300px;
+                border:2px solid $primary-color;
+                text-align: center;
+                &:last-child{
+                    width:auto;  
+                }
+            }
+        }
+       }
+       .card{
+        @extend %btn;
+        ul{
+            color:white!important;
+        }
+        
+       }
+    }
+}

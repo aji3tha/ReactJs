@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+body .common-style h3, body .common-style .inline-style, body .common-style button, body .common-style .card {
+  cursor: pointer;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0px !important;
+  background: linear-gradient(to right top, #ee187f, #ee189f, #ef187f, #ee587f, #ee487f); }
+
+body .common-style input {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 10px !important;
+  background: white;
+  font-size: 18px; }
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0px; }
+  body Header {
+    background: linear-gradient(to left bottom, #61d5b8, #44cfc4, #26c8cf, #0fc1d8, #1eb8de);
+    padding: 30px;
+    box-shadow: 10px 5px 20px #090a0a37;
+    position: fixed;
+    width: 100%;
+    top: 0; }
+    body Header a {
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      text-decoration: none; }
+  body .common-style {
+    padding: 0px 30px; }
+    body .common-style h3 {
+      font-size: 25px;
+      color: white;
+      margin: 0;
+      font-weight: 600; }
+      @media screen and (max-width: 600px) {
+        body .common-style h3 {
+          font-size: 20px; } }
+    body .common-style h4 {
+      font-size: 18px;
+      color: white;
+      margin: 0;
+      font-weight: 600; }
+      @media screen and (max-width: 600px) {
+        body .common-style h4 {
+          font-size: 16px; } }
+    body .common-style ul {
+      color: #ee187f; }
+    body .common-style .inline-style {
+      background: linear-gradient(to left bottom, #61d5b8, #44cfc4, #26c8cf, #0fc1d8, #1eb8de); }
+    body .common-style button {
+      background: linear-gradient(to left bottom, #61d5b8, #44cfc4, #26c8cf, #0fc1d8, #1eb8de);
+      margin-right: 20px !important;
+      margin-left: 10px !important;
+      font-size: 20px; }
+    body .common-style table tr {
+      width: 90%;
+      box-shadow: 10px 5px 20px #090a0a37; }
+      body .common-style table tr th {
+        width: 300px;
+        border: 2px solid #ee187f;
+        padding: 8px;
+        background: linear-gradient(to right top, #ee187f, #ee189f, #ef187f, #ee587f, #ee487f); }
+        body .common-style table tr th:last-child {
+          width: auto; }
+      body .common-style table tr td {
+        width: 300px;
+        border: 2px solid #ee187f;
+        text-align: center; }
+        body .common-style table tr td:last-child {
+          width: auto; }
+    body .common-style .card ul {
+      color: white !important; }
+
+/*# sourceMappingURL=Common.css.map */

@@ -1,0 +1,19 @@
+@import "./variable";
+@mixin title($color:$white){
+    font-size:25px;
+            color:$color;
+            margin:0;
+            font-weight:600;
+            @media screen and (max-width: $small-device) {
+                font-size:20px;
+            }
+}
+@mixin sub-title($color:$white){
+    font-size:18px;
+            color:$color;
+            margin:0;
+            font-weight:600;
+            @media screen and (max-width: $small-device) {
+                font-size:16px;
+            }
+}
